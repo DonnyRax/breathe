@@ -3,6 +3,7 @@ module.exports = {
 	entry: [
 		'script!jquery/dist/jquery.min.js',
 		'script!bootstrap/dist/js/bootstrap.min.js',
+		//'script!./app/scripts/site.js',
 		'./app/app.jsx'
 	],
 	//specify the output
@@ -23,7 +24,8 @@ module.exports = {
 			'./app/components' //Folder to look at for auto-alias
 		],
 		alias: {
-			
+			Header: 'app/components/Header.jsx',
+			Nav: 'app/components/Nav.jsx'
 		},
 		extensions: ['', '.js', '.jsx']
 	},
@@ -50,7 +52,6 @@ module.exports = {
 				test: /\.(woff|woff2|eot|ttf|svg)$/, 
         		loader: "url" 
 			}
-
 		]
 	}
 }

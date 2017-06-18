@@ -1,5 +1,5 @@
-$body-color: red;
+@import 'base/_reset.scss';
+@import 'base/_typography.scss';
+@import 'base/_colours.scss';
 
-body {
-	color: $body-color;	
-}
+@import '_site.scss';

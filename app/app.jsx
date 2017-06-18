@@ -8,7 +8,7 @@ import Main from 'Main'
 export default class App extends React.Component {
 	render() {
 		return (
-			<div class="container-fluid">
+			<div class="container">
 				<Main />
 			</div>
 		)
